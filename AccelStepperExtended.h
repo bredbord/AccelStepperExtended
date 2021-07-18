@@ -1,3 +1,8 @@
+// Main Header file for AccelStepperExtended.
+// This file is liscenced under GPL v3.0 in accordance with AccelStepper liscencing documentation (https://www.airspayce.com/mikem/arduino/AccelStepper/)
+// Last Modified: 17 July 2021
+// bredbord
+
 
 #ifndef ACCELSTEPPER_EXTENDED_H
 #define ACCELSTEPPER_EXTENDED_H
@@ -7,6 +12,8 @@
 class AccelStepperExtended : public AccelStepper {
 
     public:
+        // These constructors are taken directly from AccelStepper.h for consistency of implementation
+
         /// Constructor. You can have multiple simultaneous steppers, all moving
         /// at different speeds and accelerations, provided you call their run()
         /// functions at frequent enough intervals. Current Position is set to 0, target
@@ -48,7 +55,7 @@ class AccelStepperExtended : public AccelStepper {
         /// \param[in] backward void-returning procedure that will make a backward step
         AccelStepperExtended(void (*forward)(), void (*backward)());
 
-        bool getDirection(); // get direction
+        bool getDirection(); // Direction Getter. Returns 1 for Clockwise rotation and 0 for Counter-clockwise rotation.
 };
 
 

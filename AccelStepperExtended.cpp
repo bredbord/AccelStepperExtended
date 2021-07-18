@@ -1,3 +1,8 @@
+// Main CPP file for AccelStepperExtended.
+// This file is liscenced under GPL v3.0 in accordance with AccelStepper liscencing documentation (https://www.airspayce.com/mikem/arduino/AccelStepper/)
+// Last Modified: 17 July 2021
+// bredbord
+
 #include "AccelStepperExtended.h"
 
 // Constructors
